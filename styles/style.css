@@ -274,3 +274,45 @@ img {
   background-size: cover;
   height: 100vh;
 }
+
+.blogHeader {
+  background-image: url(../assets/blog-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 150px;
+  color: #F3FAFF;
+}
+
+nav {
+  width: 40%;
+  padding-top: 2%;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+  color: #F3FAFF;
+}
+
+nav ul li a {
+  text-decoration: none;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 auto;
+          flex: 2 0 auto;
+}

@@ -1,0 +1,5 @@
+// fontsizes 
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue;
+  color: #F3FAFF;
+}
