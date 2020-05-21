@@ -1,5 +1,6 @@
-@import 'setup';
-@import 'typography';
-@import 'mixins'; 
+@import 'base/setup';
+@import 'base/typography';
+@import 'abstracts/mixins'; 
 @import 'header';
+@import 'components/buttons'
 
