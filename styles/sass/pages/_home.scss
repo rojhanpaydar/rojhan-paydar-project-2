@@ -1,1 +1,19 @@
 // Home specific styles
+
+.homeSectionOne {
+    display: flex; 
+    flex-direction: row-reverse;
+    background-color: #03697C;
+    height: 100vh;
+    @include fontRoboto(20px); 
+} 
+
+.sectionOneFlexItem{
+    display: flex; 
+    justify-content: space-around;
+    width: 50%; 
+}
+
+.homeSectionTwo {
+    background-color: #474BB5;
+}

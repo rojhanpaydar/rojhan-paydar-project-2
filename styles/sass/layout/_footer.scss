@@ -1,0 +1,8 @@
+footer {
+    background-color: #044779;
+        p {
+        text-align: center; 
+        color: white;
+        @include fontRoboto(20px);
+    }
+}

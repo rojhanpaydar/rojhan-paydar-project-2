@@ -1,5 +1,16 @@
-// fontsizes 
-@mixin fontSize($sizeValue) {
+// fontsizes & styles
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Walter Turncoat', cursive;
+
+@mixin fontWalter($sizeValue) {
   font-size: $sizeValue;
   color: #F3FAFF;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+@mixin fontRoboto($sizeValue) {
+  font-size: $sizeValue;
+  color: #F3FAFF;
+  font-family: 'Roboto', sans-serif;
 }

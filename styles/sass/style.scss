@@ -1,6 +1,8 @@
 @import 'base/setup';
 @import 'base/typography';
 @import 'abstracts/mixins'; 
-@import 'header';
-@import 'components/buttons'
-
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'components/buttons';
+@import 'pages/home';
+@import 'layout/footer';

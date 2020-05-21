@@ -1,39 +1,39 @@
-.homeHeader {
-    background-image: url(../assets/home-header.jpg); 
+header {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    // flex-direction: column-reverse;
+    // justify-content: center;
+}
+
+.homeHeader {
+    background-image: url(../assets/home-header.jpg); 
 }
 
 .blogHeader {
-    background-image: url(../assets/blog-header.jpg); 
-    background-position: center;
-    background-size: cover;
-    height: 100vh; 
+    background-image: url(../assets/blog-header.jpg);  
 }
 
 .contactHeader {
     background-image: url(../assets/contact-header.jpg); 
-    background-position: center;
-    background-size: cover;
-    height: 100vh;   
+}
+
+
+.headerSideImage {
+    width: 50%; 
+    position: relative;
+    top: 40%; 
+    margin-left: 80px; 
 }
 
 h1 {
-  @include fontSize(150px);
+  @include fontWalter(150px);
+  font-size: 110px;
+  color: #F3FAFF;
+  font-family: 'Walter Turncoat', cursive;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-left: 50px;
 }
-
-nav {
-    width: 40%;
-    padding-top: 2%; 
-    ul li {
-        display: flex; 
-        justify-content: space-evenly;
-        @include fontSize(20px);
-
-            a {
-            text-decoration: none;
-            flex: 2 0 auto; 
-            }
-        }
-    }

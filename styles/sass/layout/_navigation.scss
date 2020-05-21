@@ -1,0 +1,17 @@
+nav {
+    width: 40%;
+    padding: 2% 0 0 5%; 
+    position: absolute;
+    top: 0;  
+    ul li {
+        display: flex; 
+        justify-content: space-evenly;
+        @include fontRoboto(20px);
+
+            a {
+            text-decoration: none;
+            flex: 2 0 auto;
+            color: white;  
+            }
+        }
+    }

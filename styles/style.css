@@ -265,38 +265,70 @@ img {
 }
 
 * {
-  border: 1px solid purple;
+  border: 1px solid white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .homeHeader {
   background-image: url(../assets/home-header.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
 }
 
 .blogHeader {
   background-image: url(../assets/blog-header.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
 }
 
 .contactHeader {
   background-image: url(../assets/contact-header.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+}
+
+.headerSideImage {
+  width: 50%;
+  position: relative;
+  top: 40%;
+  margin-left: 80px;
 }
 
 h1 {
   font-size: 150px;
   color: #F3FAFF;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 110px;
+  color: #F3FAFF;
+  font-family: 'Walter Turncoat', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50px;
 }
 
 nav {
   width: 40%;
-  padding-top: 2%;
+  padding: 2% 0 0 5%;
+  position: absolute;
+  top: 0;
 }
 
 nav ul li {
@@ -308,6 +340,7 @@ nav ul li {
           justify-content: space-evenly;
   font-size: 20px;
   color: #F3FAFF;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul li a {
@@ -315,4 +348,45 @@ nav ul li a {
   -webkit-box-flex: 2;
       -ms-flex: 2 0 auto;
           flex: 2 0 auto;
+  color: white;
+}
+
+.homeSectionOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-color: #03697C;
+  height: 100vh;
+  font-size: 20px;
+  color: #F3FAFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sectionOneFlexItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.homeSectionTwo {
+  background-color: #474BB5;
+}
+
+footer {
+  background-color: #044779;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  color: #F3FAFF;
+  font-family: 'Roboto', sans-serif;
 }
