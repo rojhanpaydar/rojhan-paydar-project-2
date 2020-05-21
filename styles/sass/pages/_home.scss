@@ -2,7 +2,9 @@
 
 .homeSectionOne {
     display: flex; 
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     background-color: #03697C;
     height: 100vh;
     @include fontRoboto(20px); 
@@ -12,6 +14,26 @@
     display: flex; 
     justify-content: space-around;
     width: 50%; 
+    position: relative;
+    top: 5%;  
+}
+
+.sectionOneText {
+    display: flex; 
+    height: auto; 
+    width: 10%;
+    border-radius: 50%;
+    background-color: #474BB5;
+
+}
+
+h2 {
+    position: relative; 
+    @include fontWalter(40px)
+}
+
+p {
+    margin-top: 20px; 
 }
 
 .homeSectionTwo {

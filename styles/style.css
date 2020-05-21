@@ -355,10 +355,16 @@ nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #03697C;
   height: 100vh;
   font-size: 20px;
@@ -373,6 +379,29 @@ nav ul li a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
+  position: relative;
+  top: 5%;
+}
+
+.sectionOneText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 10%;
+  border-radius: 50%;
+  background-color: #474BB5;
+}
+
+h2 {
+  position: relative;
+  font-size: 40px;
+  color: #F3FAFF;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+p {
+  margin-top: 20px;
 }
 
 .homeSectionTwo {
