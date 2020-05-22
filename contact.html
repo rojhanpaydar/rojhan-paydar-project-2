@@ -10,7 +10,7 @@
     <title>Get In Touch</title>
 </head>
 <body class="wrapper">
-    <header>
+    <header class="contactHeader">
         <nav>
             <ul>
                 <li>
@@ -25,27 +25,31 @@
         <h1>Get In Touch</h1>
     </header>
 <main>
-    <section>
-        <aside>
+    <section class="contactSection">
+        <div>
             <!-- icons -->
             <p>info@email.com</p>
             <p>123 - 456 - 7890 </p>
             <p>123 Queen Street West, Unit 10</p>
             <p>Toronto, Ontario</p>
             <p>M5V2D5</p>
-        </aside>
-            <form action="">
-                <fieldset>
+        </div>
+            <form action="#" method="#" class="myForm" name="myForm">
+                <div>
+                    <fieldset>
                     <label for="name" class="visually-hidden">Name</label>
                     <input type="text" name="" id="name" placeholder="Name">
             
                     <label for="email" class="visually-hidden">Email</label>
                     <input type="email" name="" id="email" placeholder="Email">
                 </fieldset>
-                <fieldset>
-                    <textarea placeholder="Comment"></textarea>
+                </div>
+                <div>
+                    <fieldset>
+                    <textarea name="comment" cols="80" rows="10" placeholder="Comment"></textarea>
                     <button type="submit">Submit</button>
-                </fieldset>   
+                </div>   
+                </fieldset>
             </form>
     </section>
 </main>

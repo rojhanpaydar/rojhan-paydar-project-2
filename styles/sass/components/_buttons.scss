@@ -1,2 +1,7 @@
 button {
+    @include fontWalter(20px);
+    color: #474BB5;
+    background-color: #08FDED;
+    border: none; 
+    padding: 10px;
 }

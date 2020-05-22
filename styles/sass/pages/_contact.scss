@@ -1,1 +1,9 @@
 // Contact specific styles
+
+.contactSection {
+    background-color: #03697C;
+    height: 100vh; 
+    @include fontRoboto(20px);
+    display: inline-block; 
+    width: 100%; 
+}

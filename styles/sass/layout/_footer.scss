@@ -1,8 +1,10 @@
 footer {
     background-color: #044779;
+    text-align: center; 
+    padding: 5px; 
         p {
-        text-align: center; 
         color: white;
         @include fontRoboto(20px);
+        display: inline-block;
     }
 }
