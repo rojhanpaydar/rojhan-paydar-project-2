@@ -9,41 +9,51 @@
 }
 
 .myForm {
-  display: flex; 
-  position: absolute;
-  top: 25%; 
-  left: 10%; 
-}
-
-.formFlexItem {
-  display: flex; 
-  flex-direction: column;
+  position: relative; 
+  bottom: 20rem;
+  background-color: #474BB5;
+  max-width: 60%; 
+  padding: 5%; 
+  box-shadow: 25px 20px 0px 0px rgba(8,253,237,1);
 }
 
 input {
-  width:100%;
+  width:40%;
   margin:0  0 20px 0;
   outline:0;
-  // display: flex; 
-  // flex-direction: column;
+  background: none;
+  padding: 2%;  
+  border: none;
 }
-
-.formsLeft {
-  float: left; 
-  width: 50%; 
-}
-
-.formsRight {
-  float: left;
-  width: 50%; 
-}
-
-// .formSizing {
-//   width: 800px;
-//   background-color: #474BB5;
-// }
 
 textarea {
-    align-self: center;
-    resize: none;
+  resize: none;
+  background: none; 
+  max-width: 100%; 
+  padding: 2%;
+  border: 1px solid #F3FAFF; 
+}
+
+#name, 
+#email,
+textarea {
+  @include fontRoboto(16px);
+  letter-spacing: 1px;
+}
+
+
+#name,
+#email {
+  border-bottom-width: 1px;
+  border-bottom-color: #F3FAFF;
+  border-bottom-style: solid;
+}
+
+
+#email {
+  margin-left: 18%; 
+}
+
+input::placeholder {
+  color: #fff;
 }

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/3212c86140.js" crossorigin="anonymous"></script>
     <title>Get In Touch</title>
 </head>
-<body class="wrapper">
+<body>
     <header class="contactHeader">
         <nav>
             <ul>
@@ -25,10 +25,19 @@
         <h1>Get In Touch</h1>
     </header>
 <main>
-    <section class="contactSection">
-        <div>
+    <section class="contactSection wrapper">
+        <div class="contactFlexContainer">
+        <div class="contactInfoFlex">
+            <div class="socialMediaFlex">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li class="instaIcon"><i class="fab fa-instagram"></i></li>
+                <li class="twitterIcon"><i class="fab fa-twitter"></i></li>
+                <li class="whatsappIcon"><i class="fab fa-whatsapp"></i></li>
+            </ul> 
+            </div>
             <!-- icons -->
-            <p>info@email.com</p>
+            <p class="infoStyle">info@email.com</p>
             <p>123 - 456 - 7890 </p>
             <p>123 Queen Street West, Unit 10</p>
             <p>Toronto, Ontario</p>
@@ -36,17 +45,16 @@
         </div>
             <form action="#" method="#" class="myForm formFlexStyles" name="myForm">
                 <div>
-                    <fieldset class="formFlexItem">
                     <label for="name" class="visually-hidden">Name</label>
                     <input type="text" name="" id="name" placeholder="Name">
             
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input type="email" name="" id="email" placeholder="Email">
-                    <textarea name="comment" cols="80" rows="10" placeholder="Comment"></textarea>
-                    <button type="submit">Submit</button>
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" name="" id="email" placeholder="Email address">
+                    <textarea name="comment" cols="80" rows="7" placeholder="Message"></textarea>
+                    <button type="submit"><a href="#">Submit</a></button>
                 </div>   
-                </fieldset>
             </form>
+            </div>
     </section>
 </main>
     <footer>

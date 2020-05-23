@@ -384,6 +384,16 @@ button {
   margin-top: 5%;
 }
 
+form button {
+  width: 100%;
+  margin-top: 8%;
+}
+
+button a {
+  color: #474BB5;
+  text-decoration: none;
+}
+
 .homeSectionOne {
   background-color: #03697C;
   height: 100vh;
@@ -684,13 +694,61 @@ p {
 
 .contactSection {
   background-color: #03697C;
-  height: 100vh;
-  font-size: 20px;
+  height: 70vh;
+  font-size: 18px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   display: inline-block;
-  width: 100%;
+  max-width: 100%;
+}
+
+.contactSection p {
+  line-height: 10px;
+}
+
+.infoStyle {
+  margin-bottom: 10%;
+}
+
+.contactFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactInfoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactInfoFlex ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.socialMediaFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.instaIcon,
+.twitterIcon,
+.whatsappIcon {
+  margin-left: 10px;
 }
 
 .visually-hidden {
@@ -706,45 +764,67 @@ p {
 }
 
 .myForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 25%;
-  left: 10%;
-}
-
-.formFlexItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+  bottom: 20rem;
+  background-color: #474BB5;
+  max-width: 60%;
+  padding: 5%;
+  -webkit-box-shadow: 25px 20px 0px 0px #08fded;
+          box-shadow: 25px 20px 0px 0px #08fded;
 }
 
 input {
-  width: 100%;
+  width: 40%;
   margin: 0  0 20px 0;
   outline: 0;
-}
-
-.formsLeft {
-  float: left;
-  width: 50%;
-}
-
-.formsRight {
-  float: left;
-  width: 50%;
+  background: none;
+  padding: 2%;
+  border: none;
 }
 
 textarea {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   resize: none;
+  background: none;
+  max-width: 100%;
+  padding: 2%;
+  border: 1px solid #F3FAFF;
+}
+
+#name,
+#email,
+textarea {
+  font-size: 16px;
+  color: #F3FAFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+#name,
+#email {
+  border-bottom-width: 1px;
+  border-bottom-color: #F3FAFF;
+  border-bottom-style: solid;
+}
+
+#email {
+  margin-left: 18%;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:-ms-input-placeholder {
+  color: #fff;
+}
+
+input::-ms-input-placeholder {
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
 }
 
 footer {

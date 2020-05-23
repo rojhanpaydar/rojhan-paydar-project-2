@@ -2,9 +2,46 @@
 
 .contactSection {
     background-color: #03697C;
-    height: 100vh; 
-    @include fontRoboto(20px);
+    height: 70vh; 
+    @include fontRoboto(18px);
     display: inline-block; 
-    width: 100%; 
+    max-width: 100%; 
+                    p {
+                line-height: 10px; 
+            }
 }
 
+.infoStyle {
+    margin-bottom: 10%; 
+}
+
+.contactFlexContainer {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.contactInfoFlex {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+        }
+}
+
+.socialMediaFlex {
+    display: flex; 
+    width: 80%; 
+    // justify-content: center;
+        i {
+        // width: calc(30% - 40px);
+        // margin: 0 20px; 
+    }
+}
+
+.instaIcon,
+.twitterIcon,
+.whatsappIcon  {
+    margin-left: 10px;
+}
