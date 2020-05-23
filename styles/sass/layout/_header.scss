@@ -5,8 +5,23 @@ header {
     display: flex;
 }
 
+h1 {
+    @include fontWalter(150px);
+    font-size: 130px;
+    color: #F3FAFF;
+    font-family: 'Walter Turncoat', cursive;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+
 .homeHeader {
     background-image: url(../assets/home-header.jpg); 
+        h1 {
+            margin-left: 2%;
+            padding-top: 17%;
+        }
 }
 
 .blogHeader {
@@ -15,6 +30,12 @@ header {
 
 .contactHeader {
     background-image: url(../assets/contact-header.jpg); 
+    position: relative; 
+        h1 {
+            position: absolute;
+            bottom: 50%;
+            left: 5%;
+        }
 }
 
 
@@ -22,18 +43,5 @@ header {
     width: 50%; 
     position: relative;
     top: 30%; 
-    margin-left: 82px; 
-}
-
-h1 {
-  @include fontWalter(150px);
-  font-size: 130px;
-  color: #F3FAFF;
-  font-family: 'Walter Turncoat', cursive;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  margin-left: 2%;
-  padding-top: 17%;
-  font-weight: lighter;
+    margin-left: 82px;
 }

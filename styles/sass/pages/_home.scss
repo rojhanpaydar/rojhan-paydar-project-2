@@ -13,6 +13,7 @@
              div {
             margin: 10px;
             flex: 1 0 calc(50% - 20px);
+            padding: 2%;
     }
 }
 
@@ -22,8 +23,8 @@
 
 .iconCircle::before {
     content : '';
-    height: 40px; 
-    width: 40px;
+    height: 50px; 
+    width: 50px;
     border-radius: 50%;
     background-color: #08FDED;
     display: inline-block;
@@ -37,10 +38,43 @@
     color:#474BB5;
 }
 
+.iconCenterLeft {
+    position: absolute; 
+    left: 7%; 
+}
+
+.iconCenterRight {
+    position: absolute; 
+    left: 47%;      
+}
+
 i {
     // width: 15px; 
-    font-size: 15px; 
+    font-size: 25px; 
 }
+
+.iconCommunity {
+    position: absolute;
+    top: -28px;
+}
+
+.iconBlog {
+    position: absolute;
+    top: -30px;
+    left: 6px;
+}
+
+.iconPhone {
+    position: absolute;
+    top: -30px;
+    left: 2px;
+}
+
+.iconHome {
+    position: absolute; 
+    top: -30px; 
+}
+
 
 h2 {
     position: relative; 
@@ -61,7 +95,8 @@ p {
     @include fontRoboto(18px);
     position: relative; 
         p {
-            line-height: 30px; 
+            line-height: 30px;
+            width: 90%; 
     }
 }
 
@@ -139,7 +174,7 @@ p {
 
 .homeSectionFiveFlex { 
     display: flex; 
-    padding: 5%;
+    padding: 3%;
         div {
             display:flex; 
             flex-direction: column;
@@ -148,7 +183,7 @@ p {
             margin-left: 5%;
             padding-top: 3%; 
                 p {
-                    width: 75%;
+                    // width: 75%;
                     line-height: 35px; 
                     margin-bottom: 30px; 
                 }

@@ -7,10 +7,12 @@
   font-size: $sizeValue;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
+  font-weight: lighter; 
 }
 
 @mixin fontRoboto($sizeValue) {
   font-size: $sizeValue;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter; 
 }

@@ -269,10 +269,6 @@ img {
   display: block;
 }
 
-* {
-  border: 1px solid red;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -294,29 +290,11 @@ header {
   display: flex;
 }
 
-.homeHeader {
-  background-image: url(../assets/home-header.jpg);
-}
-
-.blogHeader {
-  background-image: url(../assets/blog-header.jpg);
-}
-
-.contactHeader {
-  background-image: url(../assets/contact-header.jpg);
-}
-
-.headerSideImage {
-  width: 50%;
-  position: relative;
-  top: 30%;
-  margin-left: 82px;
-}
-
 h1 {
   font-size: 150px;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
+  font-weight: lighter;
   font-size: 130px;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
@@ -330,9 +308,37 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.homeHeader {
+  background-image: url(../assets/home-header.jpg);
+}
+
+.homeHeader h1 {
   margin-left: 2%;
   padding-top: 17%;
-  font-weight: lighter;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header.jpg);
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header.jpg);
+  position: relative;
+}
+
+.contactHeader h1 {
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+}
+
+.headerSideImage {
+  width: 50%;
+  position: relative;
+  top: 30%;
+  margin-left: 82px;
 }
 
 nav {
@@ -352,6 +358,7 @@ nav ul li {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
 nav ul li a {
@@ -366,6 +373,7 @@ button {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
+  font-weight: lighter;
   color: #474BB5;
   background-color: #08FDED;
   border: none;
@@ -382,6 +390,7 @@ button {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   padding-top: 10%;
 }
 
@@ -398,6 +407,7 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(50% - 20px);
           flex: 1 0 calc(50% - 20px);
+  padding: 2%;
 }
 
 .iconCircle {
@@ -406,8 +416,8 @@ button {
 
 .iconCircle::before {
   content: '';
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background-color: #08FDED;
   display: inline-block;
@@ -421,8 +431,40 @@ button {
   color: #474BB5;
 }
 
+.iconCenterLeft {
+  position: absolute;
+  left: 7%;
+}
+
+.iconCenterRight {
+  position: absolute;
+  left: 47%;
+}
+
 i {
-  font-size: 15px;
+  font-size: 25px;
+}
+
+.iconCommunity {
+  position: absolute;
+  top: -28px;
+}
+
+.iconBlog {
+  position: absolute;
+  top: -30px;
+  left: 6px;
+}
+
+.iconPhone {
+  position: absolute;
+  top: -30px;
+  left: 2px;
+}
+
+.iconHome {
+  position: absolute;
+  top: -30px;
 }
 
 h2 {
@@ -430,6 +472,7 @@ h2 {
   font-size: 40px;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
+  font-weight: lighter;
 }
 
 p {
@@ -455,11 +498,13 @@ p {
   font-size: 18px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   position: relative;
 }
 
 .homeSectionTwo p {
   line-height: 30px;
+  width: 90%;
 }
 
 .sectionTwoFlexItem {
@@ -535,6 +580,7 @@ p {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   background-color: #03697C;
   height: 80vh;
 }
@@ -565,6 +611,7 @@ p {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   background-color: #03697C;
   height: 80vh;
 }
@@ -573,7 +620,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5%;
+  padding: 3%;
 }
 
 .homeSectionFiveFlex div {
@@ -595,7 +642,6 @@ p {
 }
 
 .homeSectionFiveFlex div p {
-  width: 75%;
   line-height: 35px;
   margin-bottom: 30px;
 }
@@ -642,6 +688,7 @@ p {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   display: inline-block;
   width: 100%;
 }
@@ -659,10 +706,45 @@ p {
 }
 
 .myForm {
-  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.formFlexItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  width: 100%;
+  margin: 0  0 20px 0;
+  outline: 0;
+}
+
+.formsLeft {
+  float: left;
   width: 50%;
-  padding: 10px;
-  text-align: center;
+}
+
+.formsRight {
+  float: left;
+  width: 50%;
+}
+
+textarea {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  resize: none;
 }
 
 footer {
@@ -676,5 +758,6 @@ footer p {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   display: inline-block;
 }
