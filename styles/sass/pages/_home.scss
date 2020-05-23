@@ -1,25 +1,18 @@
 // Home specific styles
 
 .homeSectionOne {
-    display: flex; 
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     background-color: #03697C;
     height: 100vh;
     @include fontRoboto(20px);
+    padding-top: 10%; 
 } 
 
 .sectionOneFlexItem {
     display: flex; 
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    width: 70%; 
-    position: relative;
-    top: 5%;  
+    flex-wrap: wrap; 
              div {
-            margin: 10px; 
-            // width:calc(50% - 10px);
+            margin: 10px;
+            flex: 1 0 calc(50% - 20px);
     }
 }
 
@@ -39,9 +32,14 @@
 
 .iconCircle a {
     position: absolute;
-    left: 5px;
+    left: 20%;
     bottom: 10px;
     color:#474BB5;
+}
+
+i {
+    // width: 15px; 
+    font-size: 15px; 
 }
 
 h2 {
@@ -60,20 +58,39 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    @include fontRoboto(20px);
+    @include fontRoboto(18px);
     position: relative; 
+        p {
+            line-height: 30px; 
+    }
 }
 
 .sectionTwoFlexItem {
+    // width: 37%;
+    width: 40%;
+    padding: 1%;
+    line-height: 35px;
+        h2 {
+            font-size: 35px; 
+        }
+}
+
+.sectionTwoFlexItem1 {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sectionTwoFlexItem2 {
     display: flex; 
     flex-direction: column;
     align-items: flex-end;
-    width: 50%; 
-    padding: 2%; 
+    // margin-right: 10%; 
 }
 
 .sectionTwoSideImage1 {
-    width: 40%; 
+    width: 35%; 
     position: absolute; 
     top: -25px;
     left: 0;  
@@ -81,7 +98,7 @@ p {
 }
 
 .sectionTwoSideImage2 {
-    width: 40%; 
+    width: 35%; 
     position: absolute;
     bottom: -25px; 
     right: 0; 
@@ -92,7 +109,7 @@ p {
     display: flex;
     flex-direction: row-reverse;
     align-self: flex-end;
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
 }
 
 
@@ -115,16 +132,21 @@ p {
 }
 
 .homeSectionFive {
-    display: flex; 
     @include fontRoboto(20px);
     background-color: #03697C;
     height: 80vh; 
+}
+
+.homeSectionFiveFlex { 
+    display: flex; 
+    padding: 5%;
         div {
             display:flex; 
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            margin-left: 100px; 
+            margin-left: 5%;
+            padding-top: 3%; 
                 p {
                     width: 75%;
                     line-height: 35px; 
@@ -142,12 +164,17 @@ p {
 }
 
 .homeSectionSix {
-    display: flex; 
     background-color: #474BB5;
     height: 80vh;
         img {
-            display: flex; 
-            width:calc(100 / 3);
-            margin: 1%; 
+            width: calc(33.3% - 20px);
+            margin: 10px;
         } 
+}
+
+.homeSectionSixFlex {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding-top: 8%; 
 }
