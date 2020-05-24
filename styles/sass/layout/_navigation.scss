@@ -11,7 +11,11 @@ nav {
             a {
             text-decoration: none;
             flex: 2 0 auto;
-            color: white;  
+            color: white;
+            transition-property: width;
+    	    transition-timing-function: ease-in; 
+    	    transition-duration: 1s;
+    	    transition-delay: 0.2s;  
             }
         }
     }

@@ -7,10 +7,8 @@
 }
 
 .blogBigSideImage {
-    width: 63%;
-    height: 50%;
     position: relative;
-    bottom: 130px; 
+    bottom: 143px; 
         img {
              box-shadow: -25px 20px 0px 0px rgba(8,253,237,1);
         }
@@ -19,51 +17,99 @@
 .positionAnchor {
     position: relative; 
     bottom: 50%; 
-    // height: 100vh; 
+    margin-top: 40%; 
 }
 
 .blogFlexContainer1 {
     display: flex; 
-    flex-direction: row-reverse; 
-        p {
-                width: 70%;
-                font-size: 20px; 
+    flex-direction: column;
+    margin-top: 10%;
+        article {
+            letter-spacing: 1px;
+            padding: 5%; 
+                h2 {
+                    font-size: 60px; 
+                    margin-bottom: 5%; 
+                }
+                
         }
 }
 
 .blogFlexContainer2 { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 50%;
+    align-items: flex-start;
     margin-left: 8%; 
+    width: 62%; 
+        h2 p {
+            width: calc(10% - 20px);
+            margin-left: 10px; 
+        }
 }
 
-.blogFlexContainer3 {
+.userComment {
     display: flex;
+    flex-direction: column;
+}
+
+.userCommentContainer {
+    display: flex;
+    flex-direction: column;
+        img {
+        align-self: flex-start;
+        position: absolute; 
+        }
+}
+
+
+.blogCommentContainer {
+    display: flex; 
     flex-direction: row-reverse;
-    justify-content: space-between;
+    margin-top: 15%; 
+}
+
+
+.containRight{
+    display: flex;
+    flex-direction: row-reverse; 
+    position: absolute;
+}
+
+.containLeft {
+    display: flex; 
 }
 
 h3 {
-    @include fontWalter(18px);
+    @include fontWalter(20px);
+}
+
+.blogFlexContainer1 h2 {
+    font-size: 45px;
 }
 
 .formsSection {
-    height: 100vh; 
+    height: 100vh;
+    position: relative; 
 }
 
 .blogSmallSideImage {
-    width: 100%; 
-    // position: absolute;
-    // left: 10px; 
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    right: 25px; 
 }
 
 .purpleBox {
-    height: 400px;
-    width: 300px; 
-    background-color: #474BB5; 
+    height: 700px;
+    width: 300px;
+    background-color: #474BB5;
+    // z-index: -1;
+    position: absolute;
+    top: 15%;
+    left: 75px;
     // position: absolute; 
     // left: 10%; 
         h3 {
@@ -72,19 +118,28 @@ h3 {
         }
 }
 
-.innerWrapper p,
+.innerWrapper p {
+    margin-top: 5%;
+    letter-spacing: 1px;
+    margin-bottom: 9%;
+    line-height: 22px;
+}
+
 .innerWrapper ul li {
-    margin-top: 5%; 
-    letter-spacing: 1px; 
+    line-height: 30px; 
 }
 
 .marginDown {
-    margin-top: 40%;  
+    margin-top: 355px;  
 }
 
 .blogFlexItems {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 62%;
     justify-content: right;
+    border: 5px solid rgba(8,253,237,1);
+    border-right: none;
+    border-left: 5px solid rgba(8,253,237,1);
+    padding-left: 20px; 
 }
