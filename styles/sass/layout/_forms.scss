@@ -57,3 +57,14 @@ textarea {
 input::placeholder {
   color: #fff;
 }
+
+// BLOG FORM STYLESS
+
+.myBlogForm {
+  position: relative;
+  bottom: 0;
+  margin-left: 50%;  
+  background-color: none;
+  max-width: 60%; 
+  padding: 5%; 
+}

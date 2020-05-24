@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/3212c86140.js" crossorigin="anonymous"></script>
     <title>Blog Post</title>
 </head>
-<body class="wrapper">
+<body>
     <header class="blogHeader">
         <nav>
             <ul>
@@ -21,65 +21,87 @@
                 </li>
             </ul>
         </nav>
-        <!-- hero title -->
     <h1>Blog</h1>
  </header>
-<main>
-        <!-- first section of site -->
-        <section>
-            <div>
+<main class="wrapper blogBody">
+    <!-- ******************************************************************* -->
+    <!-- *********************** first section of site ********************* -->
+    <!-- ******************************************************************* -->
+        <section class="formsSection">
+            <div class="blogFlexContainer3">
+            <div class="blogBigSideImage">
              <img src="assets/blog-post-imag.jpg" alt="A child playing with bubbles">
             </div>
-            <div>
-                <div>
-                    <h2>New Activities</h2>
-                    <time></time>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam modi earum delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe doloribus cumque nesciunt laboriosam explicabo, iusto quisquam aperiam debitis ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-
-                     Maiores distinctio id labore quas laudantium laboriosam nam aliquid blanditiis molestiae aspernatur aperiam totam laborum facilis deserunt beatae fuga molestias temporibus, nesciunt libero. Nulla autem aut cupiditate repudiandae, numquam quibusdam a recusandae.
-                    
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum earum doloremque neque dolores nihil ipsam eligendi modi aliquid reiciendis. Pariatur quam deleniti aperiam? Consequuntur fugit laudantium ut, alias ea dicta. Facere sint ex error aut quibusdam consequatur inventore maiores tempore.
-                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officiis magni ipsam alias sed ullam!</p>
+                            <div class="blogFlexContainer1">
+                                <div class="blogFlexItems">
+                                    <h2>New Activities</h2>
+                                    <time></time>
+                                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam modi earum delectus. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quasi saepe doloribus cumque nesciunt laboriosam explicabo, iusto
+                                        quisquam aperiam debitis ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            
+                                        Maiores distinctio id labore quas laudantium laboriosam nam aliquid blanditiis molestiae aspernatur aperiam
+                                        totam laborum facilis deserunt beatae fuga molestias temporibus, nesciunt libero. Nulla autem aut cupiditate
+                                        repudiandae, numquam quibusdam a recusandae.
+                            
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum earum doloremque neque dolores nihil ipsam
+                                        eligendi modi aliquid reiciendis. Pariatur quam deleniti aperiam? Consequuntur fugit laudantium ut, alias ea
+                                        dicta. Facere sint ex error aut quibusdam consequatur inventore maiores tempore.
+                            
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officiis magni ipsam alias sed ullam!</p>
+                                </div>
+                            </div>
+            <!-- left side of page -->
+            <div class="blogSmallSideImage">
+                <img src="./assets/blog-side-image.jpg" alt="Children grabbing colourful chalk from a box">
+                <div class="purpleBox">
+                    <div class="innerWrapper">
+                        <div class="marginDown">
+                            <h3> Our Mission </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid distinctio at quaerat?</p>
+                        </div>
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="/assets/blog-side-image.jpg" alt="Children grabbing colourful chalk from a box">
-                <h3> Our Mission </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid distinctio at quaerat?</p>
-                <h3>Recent Posts</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div>
-        </section>
-        <!-- start of third section -->
-        <section>
+        </div>
+    </div>
+    </div>
+</section>
+    <!-- ******************************************************************* -->
+    <!-- *********************** second section of site ********************* -->
+    <!-- ******************************************************************* -->
+        <section class="positionAnchor">
+            <div class="blogFlexContainer2"> 
             <h2>COMMENTS</h2>
             <div>
-                <img src="/assets/comment-1.jpg" alt="User profile">
+                <img src="./assets/comment-1.jpg" alt="User profile">
                 <p><time></time> By Mariama</p>
             </div>
             <div>
-                <img src="/assets/comment-2.jpg" alt="User profile">
+                <img src="./assets/comment-2.jpg" alt="User profile">
                 <p><time></time> By Rob</p>
             </div>
-            <form action="">
-                <fieldset>
+            </div>
+        </section>
+        <section class="formsSection">
+            <!-- ********* FORM ********* -->
+            <form action="#" method="#" class="myBlogForm formFlexStyles" name="myForm">
+                <div>
                     <label for="name" class="visually-hidden">Name</label>
                     <input type="text" name="" id="name" placeholder="Name">
-
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input type="email" name="" id="email" placeholder="Email">
-                </fieldset>
-                <fieldset>
-                        <textarea placeholder="Comment"></textarea>
-                        <button type="submit">Post Comment</button>
-                </fieldset>
-
+            
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" name="" id="email" placeholder="Email address">
+                    <textarea name="comment" cols="80" rows="7" placeholder="Comment"></textarea>
+                    <button type="submit"><a href="#">Post comment</a></button>
+                </div>
             </form>
         </section>
     </main>

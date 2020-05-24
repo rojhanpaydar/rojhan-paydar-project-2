@@ -25,7 +25,14 @@ h1 {
 }
 
 .blogHeader {
-    background-image: url(../assets/blog-header.jpg);  
+    background-image: url(../assets/blog-header.jpg); 
+    position: relative;
+    height: 80vh; 
+        h1 {
+            position: absolute; 
+            bottom: 50%;
+            left: 5%;
+        } 
 }
 
 .contactHeader {
