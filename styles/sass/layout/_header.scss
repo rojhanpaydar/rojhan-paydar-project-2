@@ -26,12 +26,14 @@ h1 {
 
 .blogHeader {
     background-image: url(../assets/blog-header.jpg); 
+    background-position: left;
     position: relative;
     height: 80vh; 
         h1 {
             position: absolute; 
             bottom: 50%;
             left: 5%;
+            font-size: 100px; 
         } 
 }
 
@@ -47,8 +49,7 @@ h1 {
 
 
 .headerSideImage {
-    width: 50%; 
     position: relative;
-    top: 30%; 
+    top: 45%; 
     margin-left: 82px;
 }

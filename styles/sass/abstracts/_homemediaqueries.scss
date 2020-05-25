@@ -1,0 +1,27 @@
+//1069px for home.html --> header image 
+
+@media (max-width:1069px) {
+    .headerSideImage {
+        display: flex
+    }
+}
+
+// 988px for home.html
+
+@media (max-width:988px) {
+    .headerSideImage {
+        position: relative;
+        bottom: 0; 
+        width: 50%;
+    }
+
+    .sectionOneFlexItem {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+            h2 {
+                font-size: 20px;
+            } 
+    }
+}

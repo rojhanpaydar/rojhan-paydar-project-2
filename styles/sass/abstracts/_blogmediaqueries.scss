@@ -1,0 +1,84 @@
+// 988px for blog.html 
+
+@media (max-width:988px) {
+
+    .blogFlexItems {
+        width: auto; 
+        border: 5px solid #08fded;
+        padding-left: 0; 
+    }
+
+    .blogCommentContainer {
+        padding-top: 80%; 
+    }
+
+    .blogSection {
+        min-height: 100vh;
+        position: relative;
+        height: 100%;
+    }
+
+    .blogFlexContainer2{
+        margin-left: 0; 
+        width: auto;
+        padding: 5%; 
+    }
+
+    // .positionAnchor {
+    //     margin-top: 50%;
+    // }
+
+    .innerWrapper3 {
+        margin: 0 auto;
+        width: 80%; 
+        text-align: center
+    }
+
+    .blogSmallSideImage {
+        align-self: center;
+        position: unset;
+        margin-bottom: 5%;  
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .blogFlexContainer2 h2 {
+        text-align: center;
+    }
+
+    .purpleBox {
+        visibility: hidden;
+    }
+
+    .makeThisPurple {
+        background-color: #474BB5;
+        min-height: 100vh;
+        position: relative;
+        top: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hideMeAt100 {
+        visibility: visible;
+    }
+
+    .myBlogForm {
+        margin-left: 0; 
+        max-width: 100%; 
+    }
+    
+    .blogBigSideImage {
+        width: 100%;
+        position: inherit;
+            img {
+                box-shadow: none;
+            } 
+    }
+}
+
+// 647px for blog.html 
+

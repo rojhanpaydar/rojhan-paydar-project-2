@@ -40,16 +40,25 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 8%; 
-    width: 62%; 
-        h2 p {
-            width: calc(10% - 20px);
-            margin-left: 10px; 
+    // width: 62%; 
+    width: 57%; 
+        h2 {
+            font-size: 60px; 
         }
 }
 
 .userComment {
     display: flex;
     flex-direction: column;
+    // justify-content: center;
+    padding: 5%; 
+        h2, p {
+            width: calc(75% - 20px);
+            margin-left: 20%;
+            line-height: 22px;
+            letter-spacing: 1px;
+            margin-top: 0; 
+        }
 }
 
 .userCommentContainer {
@@ -65,7 +74,7 @@
 .blogCommentContainer {
     display: flex; 
     flex-direction: row-reverse;
-    margin-top: 15%; 
+    padding-top: 20%; 
 }
 
 
@@ -88,6 +97,11 @@ h3 {
 }
 
 .formsSection {
+    height: 80vh;
+    position: relative; 
+}
+
+.blogSection {
     height: 100vh;
     position: relative; 
 }
@@ -126,17 +140,28 @@ h3 {
 }
 
 .innerWrapper ul li {
-    line-height: 30px; 
+    line-height: 30px;
+    color: #08FDED; 
+}
+
+.innerWrapper ul li span {
+        color: #F3FAFF;
 }
 
 .marginDown {
     margin-top: 355px;  
 }
 
+.hideMeAt100 {
+    visibility: hidden;
+}
+
 .blogFlexItems {
     display: flex;
     flex-direction: column;
-    width: 62%;
+    // width: 62%;
+    // width: 55%; 
+    width: 60%; 
     justify-content: right;
     border: 5px solid rgba(8,253,237,1);
     border-right: none;

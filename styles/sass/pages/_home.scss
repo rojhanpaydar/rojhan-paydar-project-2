@@ -21,6 +21,11 @@
     position: relative; 
 }
 
+
+.eventTextBox {
+    width: 60%;
+}
+
 .iconCircle::before {
     content : '';
     height: 50px; 
@@ -167,14 +172,14 @@ p {
 }
 
 .homeSectionFive {
-    @include fontRoboto(20px);
+    @include fontRoboto(16px);
     background-color: #03697C;
-    height: 80vh; 
+    height: 100vh; 
 }
 
 .homeSectionFiveFlex { 
     display: flex; 
-    padding: 3%;
+    padding: 8%;
         div {
             display:flex; 
             flex-direction: column;
@@ -184,15 +189,15 @@ p {
             padding-top: 3%; 
                 p {
                     // width: 75%;
-                    line-height: 35px; 
-                    margin-bottom: 30px; 
+                    line-height: 30px; 
+                    margin-bottom: 30px;
                 }
         }
 }
 
 .sectionFiveImage {
     display: flex;
-    width: calc(100% - 100px);  
+    // width: calc(100% - 100px);  
         img {
             box-shadow: -25px 20px 0px 0px rgba(8,253,237,1);
         }
