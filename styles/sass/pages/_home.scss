@@ -2,7 +2,7 @@
 
 .homeSectionOne {
     background-color: #03697C;
-    height: 100vh;
+    height: 100%;
     @include fontRoboto(20px);
     padding-top: 10%; 
 } 
@@ -96,7 +96,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     @include fontRoboto(18px);
     position: relative; 
         p {
@@ -174,7 +174,7 @@ p {
 .homeSectionFive {
     @include fontRoboto(16px);
     background-color: #03697C;
-    height: 100vh; 
+    height: 100%; 
 }
 
 .homeSectionFiveFlex { 
@@ -205,7 +205,7 @@ p {
 
 .homeSectionSix {
     background-color: #474BB5;
-    height: 80vh;
+    height: 80%;
         img {
             width: calc(33.3% - 20px);
             margin: 10px;

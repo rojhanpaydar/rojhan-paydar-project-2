@@ -2,7 +2,8 @@
 
 @media (max-width:1069px) {
     .headerSideImage {
-        display: flex
+        // display: flex
+        align-self: center;
     }
 }
 
@@ -10,18 +11,140 @@
 
 @media (max-width:988px) {
     .headerSideImage {
-        position: relative;
-        bottom: 0; 
-        width: 50%;
+        // position: relative;
+        // bottom: 0; 
+        // width: 50%;
+        margin: 0; 
+    }
+
+    .homeSectionOne{
+        padding-top: 0; 
     }
 
     .sectionOneFlexItem {
         display: flex; 
         flex-direction: column;
         flex-wrap: wrap;
-        width: 50%;
+        // width: 50%;
             h2 {
-                font-size: 20px;
+                font-size: 50px;
+                text-align: center; 
             } 
+    }
+
+    .sectionOneFlexItem div {
+        // margin: 0; 
+        // flex: none; 
+        // padding: 0; 
+    }
+
+    .iconCenterRight {
+        left: 4%; 
+    }
+
+    .iconCenterLeft {
+        left: 4%; 
+    }
+
+    .sectionTwoSideImage1 {
+        display: flex; 
+        align-self: center; 
+        position: initial;
+        box-shadow: none;
+        width: 60%;
+    }
+
+    .sectionTwoFlexBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionTwoSideImage2 {
+        display: flex; 
+        // justify-content: revert;
+        position: inherit;
+        box-shadow: none;
+        align-self: center; 
+        width: 60%; 
+    }
+
+    .sectionTwoFlexBoxes2 {
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .homeSectionTwo p {
+        width: 100%; 
+    }
+    
+    .sectionTwoFlexItem1 {
+        align-items: center;
+        width: 100%; 
+    }
+
+    .sectionTwoFlexItem2 {
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .innerWrapperSection2 {
+        margin: 0 auto;
+        width: 80%; 
+        padding: 2%;
+    }
+}
+
+@media (max-width: 780px) {
+    .headerSideImage {
+        display:none; 
+    }
+
+    .homeHeader h1 {
+        margin: 0 auto; 
+        font-size: 80px; 
+    }
+
+    .homeHeader nav {
+        width: 80%; 
+    }
+
+    .homeSectionFiveFlex {
+        flex-direction: column;
+            div {
+                align-items: center; 
+                padding-top: 10%; 
+                margin: 0 auto; 
+                width: 100%; 
+            } 
+    }
+
+    .homeSectionSixFlex {
+        flex-direction: column;
+        align-items: center; 
+            img {
+                width: 50%; 
+            }
+    }
+}
+
+@media (max-width: 600px) {
+    .homeHeader nav {
+        display: none; 
+    }
+
+    .sectionOneFlexItem {
+        width: 100%;
+        padding: 5%;  
+    }
+
+    .iconCenterLeft {
+        position: relative;
+        left: 41%; 
+    }
+
+    .iconCenterRight {
+        position: relative;
+        left: 40%; 
     }
 }
