@@ -2,10 +2,10 @@
 
 .contactSection {
     background-color: #03697C;
-    height: 70vh; 
+    height: 70%; 
     @include fontRoboto(18px);
     display: inline-block; 
-    max-width: 100%; 
+    width: 100%; 
                     p {
                 line-height: 10px; 
             }

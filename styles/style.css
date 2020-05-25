@@ -392,6 +392,12 @@ nav ul li a {
           transition-delay: 0.2s;
 }
 
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+
 button {
   font-size: 20px;
   color: #F3FAFF;
@@ -722,13 +728,13 @@ p {
 
 .contactSection {
   background-color: #03697C;
-  height: 70vh;
+  height: 70%;
   font-size: 18px;
   color: #F3FAFF;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .contactSection p {
@@ -1220,9 +1226,6 @@ footer p {
 }
 
 @media (max-width: 600px) {
-  .homeHeader nav {
-    display: none;
-  }
   .sectionOneFlexItem {
     width: 100%;
     padding: 5%;
@@ -1284,5 +1287,49 @@ footer p {
   .blogBigSideImage img {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+}
+
+@media (max-width: 647px) {
+  .userComment p {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 865px) {
+  .contactHeader h1 {
+    font-size: 80px;
+  }
+  .contactInfoFlex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5%;
+    width: 100%;
+  }
+  .contactFlexContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myForm {
+    position: initial;
+    bottom: 0;
+    max-width: 90%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .socialMediaFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

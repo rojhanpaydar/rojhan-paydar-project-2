@@ -1,0 +1,32 @@
+
+@media (max-width: 865px) {
+    
+    .contactHeader h1 {
+        font-size: 80px; 
+    }
+
+    .contactInfoFlex {
+        align-items: center; 
+        padding: 5%; 
+        width: 100%; 
+    }
+
+    .contactFlexContainer{
+        justify-content: center;
+        width: 100%; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myForm {
+        position: initial;
+        bottom: 0; 
+        max-width: 90%; 
+        box-shadow: none;
+    }
+
+    .socialMediaFlex {
+        justify-content: center;
+    }
+
+}
