@@ -392,9 +392,54 @@ nav ul li a {
           transition-delay: 0.2s;
 }
 
-@media (max-width: 600px) {
-  nav {
+.hideMeToo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hideMe {
     display: none;
+  }
+  .hideMeToo {
+    display: initial;
+  }
+  ul.slidingMenu {
+    background: #036a7c;
+    position: fixed;
+    z-index: 10;
+    width: 30%;
+    right: -30%;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul.slidingMenu a {
+    border-bottom: 1px solid #08FDED;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    padding: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  ul.slidingMenu a:hover,
+  ul.slidingMenu a:focus {
+    background: #474BB5;
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    right: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label[for="toggle"] {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 10;
   }
 }
 
@@ -1191,11 +1236,7 @@ footer p {
     display: none;
   }
   .homeHeader h1 {
-    margin: 0 auto;
     font-size: 80px;
-  }
-  .homeHeader nav {
-    width: 80%;
   }
   .homeSectionFiveFlex {
     -webkit-box-orient: vertical;
@@ -1237,6 +1278,12 @@ footer p {
   .iconCenterRight {
     position: relative;
     left: 40%;
+  }
+}
+
+@media (max-width: 582px) {
+  .homeHeader h1 {
+    font-size: 50px;
   }
 }
 

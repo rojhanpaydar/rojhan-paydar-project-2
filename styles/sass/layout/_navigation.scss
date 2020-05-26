@@ -20,8 +20,63 @@ nav {
         }
     }
 
-@media (max-width: 600px) {
-         nav {
+    .hideMeToo {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+
+        .hideMe {
+        display: none;
+        }   
+        .hideMeToo {
+            display: initial;
+        }
+
+        ul.slidingMenu {
+        background: #036a7c;
+        position: fixed;
+        z-index: 10;
+        width: 30%; 
+        right: -30%; 
+        top: 0;
+        height: 100%;
+        transition: all 0.5s; 
+    }
+
+    ul.slidingMenu a {
+        border-bottom: 1px solid #08FDED;
+        display: inline-block;
+        font-size: 20px;
+        width: 100%;
+        padding: 50px;
+        transition: all 0.3s;
+        text-align: center; 
+    }
+
+    ul.slidingMenu a:hover,
+    ul.slidingMenu a:focus {
+        background: #474BB5;
+    }
+
+    input[type="checkbox"]:checked + ul.slidingMenu {
+        right: 0; 
+    }
+
+    input[type="checkbox"] {
         display: none; 
     }
+
+    label[for="toggle"] {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 10;
+    }
+
+
 }
+
+
+
