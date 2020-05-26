@@ -12,13 +12,29 @@ nav {
             text-decoration: none;
             flex: 2 0 auto;
             color: white;
-            transition-property: width;
-    	    transition-timing-function: ease-in; 
-    	    transition-duration: 1s;
-    	    transition-delay: 0.2s;  
+            text-align: center;
+            border: none;
             }
         }
     }
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+}
 
     .hideMeToo {
         display: none;
@@ -40,7 +56,6 @@ nav {
         width: 30%; 
         right: -30%; 
         top: 0;
-        height: 100%;
         transition: all 0.5s; 
     }
 
@@ -49,7 +64,7 @@ nav {
         display: inline-block;
         font-size: 20px;
         width: 100%;
-        padding: 50px;
+        padding: 10%;
         transition: all 0.3s;
         text-align: center; 
     }

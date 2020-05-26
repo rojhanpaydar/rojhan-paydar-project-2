@@ -286,6 +286,10 @@ body {
   width: 80%;
 }
 
+:root {
+  --mainColor: #08FDED;
+}
+
 header {
   background-position: center;
   background-size: cover;
@@ -382,14 +386,24 @@ nav ul li a {
       -ms-flex: 2 0 auto;
           flex: 2 0 auto;
   color: white;
-  -webkit-transition-property: width;
-  transition-property: width;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  text-align: center;
+  border: none;
+}
+
+a {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(var(--mainColor)));
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: background-size .2s;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
 }
 
 .hideMeToo {
@@ -410,7 +424,6 @@ nav ul li a {
     width: 30%;
     right: -30%;
     top: 0;
-    height: 100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -419,7 +432,7 @@ nav ul li a {
     display: inline-block;
     font-size: 20px;
     width: 100%;
-    padding: 50px;
+    padding: 10%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     text-align: center;
@@ -467,6 +480,14 @@ form button {
 button a {
   color: #474BB5;
   text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+button a:hover,
+button a:focus {
+  color: #0589a0;
+  padding: 5px;
 }
 
 .homeSectionOne {
@@ -672,7 +693,9 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   background-color: #03697C;
-  height: 80vh;
+  height: 80%;
+  padding: 5%;
+  text-align: center;
 }
 
 .homeSectionThree div {
@@ -768,7 +791,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 8%;
+  padding: 5%;
 }
 
 .contactSection {
@@ -950,21 +973,21 @@ p {
   display: flex;
 }
 
+.blogFlexContainer1 h2 {
+  font-size: 45px;
+}
+
+.formsSection {
+  height: 100%;
+  position: relative;
+}
+
 h3 {
   font-size: 20px;
   color: #F3FAFF;
   font-family: 'Walter Turncoat', cursive;
   font-weight: lighter;
   letter-spacing: 3px;
-}
-
-.blogFlexContainer1 h2 {
-  font-size: 45px;
-}
-
-.formsSection {
-  height: 80vh;
-  position: relative;
 }
 
 .blogSection {
@@ -1287,6 +1310,22 @@ footer p {
   }
 }
 
+@media (max-width: 420px) {
+  .sectionOneFlexItem div {
+    margin: 0;
+  }
+  .sectionOneFlexItem {
+    padding: 0;
+  }
+  .innerWrapper {
+    margin: 0;
+    width: auto;
+  }
+  .homeSectionThree {
+    padding: 5%;
+  }
+}
+
 @media (max-width: 988px) {
   .blogFlexItems {
     width: auto;
@@ -1340,6 +1379,12 @@ footer p {
 @media (max-width: 647px) {
   .userComment p {
     margin-left: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .userComment p {
+    margin-left: 40%;
   }
 }
 

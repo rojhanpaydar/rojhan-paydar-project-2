@@ -2,7 +2,6 @@
 
 @media (max-width:1069px) {
     .headerSideImage {
-        // display: flex
         align-self: center;
     }
 }
@@ -11,9 +10,6 @@
 
 @media (max-width:988px) {
     .headerSideImage {
-        // position: relative;
-        // bottom: 0; 
-        // width: 50%;
         margin: 0; 
     }
 
@@ -25,17 +21,10 @@
         display: flex; 
         flex-direction: column;
         flex-wrap: wrap;
-        // width: 50%;
             h2 {
                 font-size: 50px;
                 text-align: center; 
             } 
-    }
-
-    .sectionOneFlexItem div {
-        // margin: 0; 
-        // flex: none; 
-        // padding: 0; 
     }
 
     .iconCenterRight {
@@ -61,7 +50,6 @@
 
     .sectionTwoSideImage2 {
         display: flex; 
-        // justify-content: revert;
         position: inherit;
         box-shadow: none;
         align-self: center; 
@@ -145,4 +133,27 @@
     .homeHeader h1 {
         font-size: 50px;
     }
+}
+
+@media (max-width: 420px) {
+
+    .sectionOneFlexItem div {
+        margin: 0; 
+    }
+  .sectionOneFlexItem {
+    padding: 0; 
+
+}
+
+    .innerWrapper {
+        margin: 0; 
+        width: auto;
+
+
+    }
+
+    .homeSectionThree {
+        padding: 5%;
+    }
+
 }

@@ -14,16 +14,9 @@
         }
 }
 
-// .positionAnchor {
-//     position: relative; 
-//     bottom: 50%; 
-//     margin-top: 40%; 
-// }
-
 .blogFlexContainer1 {
     display: flex; 
     flex-direction: column;
-    // margin-top: 10%;
         article {
             letter-spacing: 1px;
             padding: 5%; 
@@ -39,8 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 8%; 
-    // width: 62%; 
+    margin-left: 8%;  
     width: 57%; 
         h2 {
             font-size: 60px; 
@@ -50,7 +42,6 @@
 .userComment {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     padding: 5%; 
         h2, p {
             width: calc(75% - 20px);
@@ -87,51 +78,36 @@
     display: flex; 
 }
 
-h3 {
-    @include fontWalter(20px);
-}
-
 .blogFlexContainer1 h2 {
     font-size: 45px;
 }
 
 .formsSection {
-    height: 80vh;
+    height: 100%;
     position: relative; 
+}
+
+h3 {
+    @include fontWalter(20px);
 }
 
 .blogSection {
     height: 100%;
-    // position: relative; 
     display:flex; 
     flex-direction: row-reverse;
 }
 
 .blogSmallSideImage {
-    // width: 350px;
     display: flex;
     flex-direction: column;
-    // position: absolute;
-    // top: -15px;
-    // z-index: 1;
-    // right: 25px; 
 }
 
 .purpleBox {
     height: 100%;
     width: 100%;
     background-color: #474BB5;
-    // z-index: -1;
-    // position: absolute;
-    // top: 15%;
-    // left: 75px;
-    // position: absolute; 
-    // left: 10%; 
     padding: 1%; 
-    // text-align: center;
-    // textalign: center; for media queries
         h3 {
-            // margin-top: 30%; 
             letter-spacing: 1px; 
         }
 }
@@ -152,19 +128,10 @@ h3 {
         color: #F3FAFF;
 }
 
-// .marginDown {
-//     margin-top: 355px;  
-// }
-
-// .hideMeAt100 {
-//     visibility: hidden;
-// }
-
 .blogFlexItems {
     display: flex;
     flex-direction: column; 
-    width: 80%; 
-    // justify-content: right;
+    width: 80%;
     border: 5px solid rgba(8,253,237,1);
     border-right: none;
     border-left: 5px solid rgba(8,253,237,1);
